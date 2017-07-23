@@ -23,7 +23,7 @@ class Game{
 		}
 		reset();
 		
-	}
+	}//输入猜测数据，输出比较结果正确后的显示
 	
 	public static void reset(){
 		System.out.println("是否继续游戏"+"(Yes or No)");
@@ -36,7 +36,7 @@ class Game{
 			System.exit(0);
 		}
 		
-	}
+	}//判断是否重新开始游戏
 
 	private static int  num = (int)(Math.random()*100 + 1);
 	
@@ -53,14 +53,13 @@ class Game{
 			return 0;
 		}
 	}
-}
+}//判断数据是否相等
 
 class Tetris{
 	public static void main(String[] args) {
 		Game game = new Game();
 		game.gameStart();
-//		game.reset();
-		
+		//调用方法
 	}
 }
 
